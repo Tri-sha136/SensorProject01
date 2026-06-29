@@ -13,18 +13,33 @@
     <div class="frame">
         <div class="center">
             <div class="title">
-                <h1>Drop file to upload</h1>
+                <!-- This header will update with the file name -->
+                <h1 id="dropzone-text">Drop file to upload</h1>
             </div>
             
-            <div class="dropzone">
+            <label for="file-upload" class="dropzone" style="cursor: pointer; display: block;">
                 <img src="http://100dayscss.com/codepen/upload.svg" class="upload-icon" />
-                <input type="file" class="upload-input" name="file" accept=".csv" />
-            </div>
+                <input type="file" id="file-upload" class="upload-input" name="file" accept=".csv" required onchange="displayFileName()" />
+            </label>
             
             <button type="submit" class="btn" name="uploadbutton">Upload file</button>
         </div>
     </div>
 </form>
+
+<script>
+function displayFileName() {
+    const fileInput = document.getElementById('file-upload');
+    const textElement = document.getElementById('dropzone-text');
+    
+    if (fileInput.files.length > 0) {
+        // Change the text to show the selected file name
+        textElement.innerHTML = "Selected: <span style='color: #4385f4;'>" + fileInput.files[0].name + "</span>";
+    } else {
+        textElement.innerHTML = "Drop file to upload";
+    }
+}
+</script>
 
 </body>
 </html>

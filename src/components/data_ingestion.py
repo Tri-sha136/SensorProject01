@@ -31,7 +31,7 @@ class DataIngestion:
             if '_id' in df.columns.to_list():      # convert it list at first
                 df=df.drop(columns=['_id'],axis=1)
 
-            df.replace({"na":np.nan},inplace=true)
+            df.replace({"na":np.nan},inplace=True)
 
             return df
         
@@ -70,7 +70,7 @@ class DataIngestion:
         logging.info("Entered initiated_data_ingestion method of data_ingestion class")
 
         try:
-            feature_store_file_path = self.export_data_into_feature_store_file_path
+            feature_store_file_path = self.export_data_into_feature_store_file_path()
 
             logging.info("got the data from mongodb")
 

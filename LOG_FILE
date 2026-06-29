@@ -1,0 +1,50 @@
+[2026-06-29 23:21:36,188] 224 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.29.246:5000
+[2026-06-29 23:21:36,188] 224 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[2026-06-29 23:21:36,202] 224 werkzeug - INFO -  * Restarting with stat
+[2026-06-29 23:21:41,335] 224 werkzeug - WARNING -  * Debugger is active!
+[2026-06-29 23:21:41,341] 224 werkzeug - INFO -  * Debugger PIN: 188-597-399
+[2026-06-29 23:21:46,569] 224 werkzeug - INFO - 127.0.0.1 - - [29/Jun/2026 23:21:46] "GET / HTTP/1.1" 200 -
+[2026-06-29 23:21:56,125] 70 root - INFO - Entered initiated_data_ingestion method of data_ingestion class
+[2026-06-29 23:21:56,127] 46 root - INFO - Exporting data from mongodb
+[2026-06-29 23:21:57,474] 56 root - INFO - Saving exported data into feature store file path : artifacts
+[2026-06-29 23:21:57,564] 75 root - INFO - got the data from mongodb
+[2026-06-29 23:21:57,564] 65 root - INFO - Entered initiate data transformation method of data transformation class
+[2026-06-29 23:21:57,839] 50 root - INFO - Entered the save_object method of MainUtils class
+[2026-06-29 23:21:57,841] 59 root - INFO - Exited the save_object method of MainUtils class
+[2026-06-29 23:21:57,843] 190 root - INFO - Splitting training and testing input and target feature
+[2026-06-29 23:21:57,843] 204 root - INFO - Extracting model config file path
+[2026-06-29 23:21:57,845] 206 root - INFO - Extracting model config file path
+[2026-06-29 23:22:41,219] 70 root - INFO - Entered initiated_data_ingestion method of data_ingestion class
+[2026-06-29 23:22:41,219] 46 root - INFO - Exporting data from mongodb
+[2026-06-29 23:22:42,314] 56 root - INFO - Saving exported data into feature store file path : artifacts
+[2026-06-29 23:22:42,374] 75 root - INFO - got the data from mongodb
+[2026-06-29 23:22:42,374] 65 root - INFO - Entered initiate data transformation method of data transformation class
+[2026-06-29 23:22:42,475] 246 root - INFO - Best found model on both training and testing dataset
+[2026-06-29 23:22:42,475] 248 root - INFO - Saving model at path: artifacts\model.pkl
+[2026-06-29 23:22:42,475] 50 root - INFO - Entered the save_object method of MainUtils class
+[2026-06-29 23:22:42,481] 59 root - INFO - Exited the save_object method of MainUtils class
+[2026-06-29 23:22:42,483] 224 werkzeug - INFO - 127.0.0.1 - - [29/Jun/2026 23:22:42] "GET /train HTTP/1.1" 200 -
+[2026-06-29 23:22:42,589] 50 root - INFO - Entered the save_object method of MainUtils class
+[2026-06-29 23:22:42,589] 59 root - INFO - Exited the save_object method of MainUtils class
+[2026-06-29 23:22:42,589] 190 root - INFO - Splitting training and testing input and target feature
+[2026-06-29 23:22:42,589] 204 root - INFO - Extracting model config file path
+[2026-06-29 23:22:42,589] 206 root - INFO - Extracting model config file path
+[2026-06-29 23:23:07,534] 246 root - INFO - Best found model on both training and testing dataset
+[2026-06-29 23:23:07,534] 248 root - INFO - Saving model at path: artifacts\model.pkl
+[2026-06-29 23:23:07,534] 50 root - INFO - Entered the save_object method of MainUtils class
+[2026-06-29 23:23:07,534] 59 root - INFO - Exited the save_object method of MainUtils class
+[2026-06-29 23:23:07,534] 224 werkzeug - INFO - 127.0.0.1 - - [29/Jun/2026 23:23:07] "GET /train HTTP/1.1" 200 -
+[2026-06-29 23:23:40,774] 224 werkzeug - INFO -  * Detected change in 'c:\\users\\dastr\\downloads\\sensor project\\src\\pipeline\\predict_pipeline.py', reloading
+[2026-06-29 23:23:44,564] 224 werkzeug - INFO -  * Restarting with stat
+[2026-06-29 23:23:48,834] 224 werkzeug - WARNING -  * Debugger is active!
+[2026-06-29 23:23:48,834] 224 werkzeug - INFO -  * Debugger PIN: 188-597-399
+[2026-06-29 23:23:57,368] 224 werkzeug - INFO - 127.0.0.1 - - [29/Jun/2026 23:23:57] "GET /predict HTTP/1.1" 200 -
+[2026-06-29 23:23:57,628] 224 werkzeug - INFO - 127.0.0.1 - - [29/Jun/2026 23:23:57] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-06-29 23:24:16,734] 80 root - INFO - predictions completed
+[2026-06-29 23:24:16,735] 51 root - INFO - prediction completed. Downloading prediction file.
+[2026-06-29 23:24:16,759] 224 werkzeug - INFO - 127.0.0.1 - - [29/Jun/2026 23:24:16] "POST /predict HTTP/1.1" 200 -
+[2026-06-29 23:58:55,915] 224 werkzeug - INFO -  * Detected change in 'c:\\users\\dastr\\downloads\\sensor project\\src\\pipeline\\predict_pipeline.py', reloading
+[2026-06-29 23:58:58,206] 224 werkzeug - INFO -  * Restarting with stat

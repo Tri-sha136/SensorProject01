@@ -7,7 +7,7 @@ import yaml
 import boto3
 
 
-from src.constant import *
+from src.constants import *
 from src.exception import CustomException
 from src.logger import logging
 
@@ -46,10 +46,12 @@ class MainUtils:
 
     @staticmethod
     def save_object(file_path: str, obj: object) -> None:
+
         logging.info("Entered the save_object method of MainUtils class")
 
 
         try:
+            os.makedirs(os.path.dirname(file_path), exist_ok=True)
             with open(file_path, "wb") as file_obj:
                 pickle.dump(obj, file_obj)
 
