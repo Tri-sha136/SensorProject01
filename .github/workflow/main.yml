@@ -1,5 +1,5 @@
 name: workflow
-
+#updated
 on:
   push:
     branches:
@@ -10,7 +10,7 @@ on:
 permissions:
   id-token: write
   contents: read
-# updated
+
 jobs:
   integration:
     name: Continuous Integration
