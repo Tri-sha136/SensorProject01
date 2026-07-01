@@ -1,7 +1,7 @@
 FROM python:3.8-slim-buster
 WORKDIR /app
 
-# 1. First, copy the entire project directory into the container
+# 1. First, copy the entire project directory into the container #
 COPY . /app
 
 # 2. Next, explicitly map the prediction artifacts folder to the name the code expects
